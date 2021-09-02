@@ -1,4 +1,21 @@
+.weather-app {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(91, 173, 254, 0.46) 0%,
+    rgba(91, 224, 254, 0.46) 47.2%,
+    rgba(170, 254, 235, 0.43) 90%
+  );
+  border-radius: 10px;
+}
+
 .container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(91, 173, 254, 0.46) 0%,
+    rgba(91, 224, 254, 0.46) 47.2%,
+    rgba(170, 254, 235, 0.43) 90%
+  );
+
   display: block;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -6,19 +23,11 @@
   border-radius: 10px;
   max-width: 600px;
 }
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
-}
 
 body {
+  background: white;
   max-width: 600px;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgba(91, 173, 254, 0.46) 0%,
-    rgba(91, 224, 254, 0.46) 47.2%,
-    rgba(170, 254, 235, 0.43) 90%
-  );
+
   color: rgba(35, 35, 75, 0.863);
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -28,7 +37,7 @@ h1 {
   font-size: 40px;
   font-weight: 100;
   text-align: center;
-  margin-top: 20px;
+  margin-top: -8px;
 }
 
 h2 {
@@ -49,7 +58,7 @@ h5 {
   font-size: 50px;
   padding: 0%;
   margin-bottom: 0%;
-  margin-top: 10px;
+  margin-top: -20px;
 }
 h6 {
   font-size: 25px;
@@ -67,7 +76,7 @@ h6 {
   display: block;
   text-align: center;
   word-spacing: 51px;
-  margin-bottom: 28px;
+  margin-bottom: 34px;
   font-size: 20px;
 }
 
@@ -111,27 +120,27 @@ h6 {
 }
 
 .form-control {
-  background: rgb(184, 233, 254);
-  color: rgba(35, 35, 75, 0.76);
-  border-radius: 50px;
+  background: #90e3fe;
+  color: #23234bc2;
+  border-radius: 20px;
   border-color: transparent;
   border-width: 0px;
   display: block;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  max-width: 145px;
+  max-width: 140px;
   text-align: right;
   position: relative;
   top: 6px;
-  left: 406px;
+  left: 427px;
 }
 .form-control::placeholder {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(35, 35, 75, 0.76);
 }
 
 .🔍 {
-  background: rgb(184, 233, 254);
+  background: #90e3fe;
   color: rgba(35, 35, 75, 0.76);
   border-radius: 50px;
   border-color: transparent;
@@ -139,12 +148,13 @@ h6 {
   display: block;
   text-align: center;
   position: relative;
-  top: -25px;
-  left: 554px;
+  margin: 0;
+  top: 36px;
+  left: 529px;
 }
 
 #currentlocation {
-  background: rgb(184, 233, 254);
+  background: #90e3fe;
   color: rgba(35, 35, 75, 0.76);
   border-radius: 50px;
   border-color: transparent;
@@ -153,6 +163,6 @@ h6 {
   text-align: center;
   position: relative;
   top: -15px;
-  left: 438px;
+  left: 453px;
   font-size: 12px;
 }
