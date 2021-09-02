@@ -1,3 +1,158 @@
+.container {
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  border-radius: 10px;
+  max-width: 600px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+body {
+  max-width: 600px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(91, 173, 254, 0.46) 0%,
+    rgba(91, 224, 254, 0.46) 47.2%,
+    rgba(170, 254, 235, 0.43) 90%
+  );
+  color: rgba(35, 35, 75, 0.863);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
-  color: aquamarine;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 250px;
+  color: whitesmoke;
+  padding: 0%;
+  margin: 0%;
+}
+h4 {
+  font-size: 100px;
+  padding: 0%;
+}
+h5 {
+  font-size: 50px;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 25px;
+  margin-bottom: 19px;
+}
+
+.sunrise {
+  display: block;
+  text-align: center;
+  word-spacing: 45px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.precipitation {
+  display: block;
+  text-align: center;
+  word-spacing: 51px;
+  margin-bottom: 28px;
+  font-size: 20px;
+}
+
+.high,
+.low {
+  font-weight: bold;
+}
+.box {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 71px;
+}
+
+#celsius-link,
+#farenheit-link {
+  color: rgb(56, 60, 65);
+  border-radius: 100px;
+  border-width: 0px;
+  font-family: "Poppins", sans-serif;
+}
+#celsius-link {
+  position: relative;
+  display: inline-block;
+  top: -106px;
+  left: 127px;
+}
+#farenheit-link {
+  position: relative;
+  display: inline-block;
+  top: -67px;
+  left: 82px;
+}
+
+#githubLink {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.form-control {
+  background: rgb(184, 233, 254);
+  color: rgba(35, 35, 75, 0.76);
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  max-width: 145px;
+  text-align: right;
+  position: relative;
+  top: 6px;
+  left: 406px;
+}
+.form-control::placeholder {
+  font-size: 14px;
+  color: rgba(35, 35, 75, 0.76);
+}
+
+.🔍 {
+  background: rgb(184, 233, 254);
+  color: rgba(35, 35, 75, 0.76);
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -25px;
+  left: 554px;
+}
+
+#currentlocation {
+  background: rgb(184, 233, 254);
+  color: rgba(35, 35, 75, 0.76);
+  border-radius: 50px;
+  border-color: transparent;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -15px;
+  left: 438px;
+  font-size: 12px;
 }
