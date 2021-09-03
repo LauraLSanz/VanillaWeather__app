@@ -22,7 +22,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -50,12 +52,14 @@
 
           <a href="#" class="btn" id="celsius-link" autofocus="on">C°</a>
           <a href="#" class="btn" id="farenheit-link">F°</a>
-
-          <h5 id="day">Sunday</h5>
-          <h6 id="time">5:00pm</h6>
-          <div class="sunrise">
-            <i class="bi bi-sunrise"></i>7:17am
-            <i class="bi bi-sunset"></i>8:04pm
+          <div id="date">
+            <small>Last updted at:</small>
+            <div id="weekday">Sunday</div>
+            <div id="time">5:00</div>
+            <div class="sunrise">
+              <i class="bi bi-sunrise"></i>7:17am
+              <i class="bi bi-sunset"></i>8:04pm
+            </div>
           </div>
 
           <div class="precipitation">
@@ -70,7 +74,7 @@
           <div class="box">
             <div class="row days">
               <div class="col-3"></div>
-              <div class="col-3"><i class="bi bi-sun-fill"></i></div>
+              <div class="col-3 sun"><i class="bi bi-sun-fill"></i></div>
               <div class="col-3 high">High</div>
               <div class="col-3 low">Low</div>
             </div>
