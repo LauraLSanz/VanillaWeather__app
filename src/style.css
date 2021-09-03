@@ -45,7 +45,9 @@ h2 {
   text-transform: capitalize;
 }
 
-h3 {
+h3,
+#icon,
+.icon {
   font-size: 250px;
   color: whitesmoke;
   padding: 0%;

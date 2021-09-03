@@ -39,10 +39,16 @@ function showTemperature(response) {
   let windSpeedElement = document.querySelector("#windspeed");
   windSpeedElement.innerHTML = `${windspeed}km/h`;
   document.querySelector("#city").innerHTML = response.data.name;
-  let weekday = document.querySelector("#weekday");
-  weekday.innerHTML = formatDateWeekDay(response.data.dt * 1000);
-  let time = document.querySelector("#time");
-  time.innerHTML = formatDateTime(response.data.dt * 1000);
+  let weekdayElement = document.querySelector("#weekday");
+  weekdayElement.innerHTML = formatDateWeekDay(response.data.dt * 1000);
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = formatDateTime(response.data.dt * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   function convertFarenheit(event) {
     event.preventDefault();
