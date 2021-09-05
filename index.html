@@ -41,7 +41,7 @@
           </form>
 
           <button id="currentlocation">Current Location</button>
-          <h1 id="city">Mexico City</h1>
+          <h1 id="city">Mexico</h1>
           <h2 id="description">Partly Cloudy</h2>
 
           <h3 class="icon">
@@ -49,10 +49,11 @@
               src="http://openweathermap.org/img/wn/10d@2x.png"
               id="icon"
               class="float-left"
+              width="200"
             />
           </h3>
 
-          <h4 id="temp">24°</h4>
+          <h4 id="temp">20°</h4>
 
           <a href="#" class="btn" id="celsius-link" autofocus="on">°C</a>
           <a href="#" class="btn" id="farenheit-link">°F</a>
@@ -70,6 +71,20 @@
             <span class="wind"
               ><i class="bi bi-wind"></i><span id="windspeed">0km/h</span></span
             >
+          </div>
+
+          <div class="weather-forecast">
+            <div class="row days">
+              <div class="col-3"></div>
+              <div class="col-3 sun"><i class="bi bi-sun-fill"></i></div>
+              <div class="col-3 high">High</div>
+              <div class="col-3 low">Low</div>
+            </div>
+          </div>
+
+          <div class="weatherForecast">
+            <div class="row" id="forecast">
+              
           </div>
         </div>
       </div>

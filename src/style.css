@@ -45,10 +45,8 @@ h2 {
   text-transform: capitalize;
 }
 
-h3,
-#icon,
-.icon {
-  size: 250px;
+h3 {
+  width: 200;
   color: whitesmoke;
   padding: 0%;
   margin: 0%;
@@ -90,7 +88,16 @@ h4 {
 .low {
   font-weight: bold;
 }
-.box {
+.weather-forecast,
+.weatherForecast {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 71px;
+}
+#forecast {
   display: block;
   position: relative;
   max-width: 400px;
