@@ -117,11 +117,18 @@ function search(event) {
     city = null;
     alert("Please enter a city");
   }
+
+  searchCity(searchInput.value);
+}
+
+function searchCity(city) {
   let units = "metric";
   let apiKey = "57603d1178c0f1e748b2d7cdf9d11821";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 }
+
+searchCity("Mexico");
 
 let searchForm = document.querySelector("#search-form");
 searchForm = addEventListener("submit", search);
