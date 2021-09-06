@@ -104,24 +104,14 @@ h4 {
   margin-bottom: 18px;
 }
 
-#celsius-link,
-#farenheit-link {
+#celsius {
+  font-size: 28px;
   color: rgb(56, 60, 65);
-  border-radius: 100px;
-  border-width: 0px;
   font-family: "Poppins", sans-serif;
-}
-#celsius-link {
   position: relative;
   display: inline-block;
-  top: -106px;
-  left: 127px;
-}
-#farenheit-link {
-  position: relative;
-  display: inline-block;
-  top: -67px;
-  left: 82px;
+  top: -112px;
+  left: 83px;
 }
 
 #githubLink {

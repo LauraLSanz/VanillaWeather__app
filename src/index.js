@@ -56,8 +56,12 @@ function displayForecast(response) {
                   width="30"
                 />
               </div>
-              <div class="col-3">${Math.round(forecastDay.temp.max)}°</div>
-              <div class="col-3">${Math.round(forecastDay.temp.min)}°</div>
+              <div class="col-3" id="max">${Math.round(
+                forecastDay.temp.max
+              )}°</div>
+              <div class="col-3" id"min">${Math.round(
+                forecastDay.temp.min
+              )}°</div>
             </div>
     `;
     }
@@ -70,6 +74,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
+
   let apiKey = "57603d1178c0f1e748b2d7cdf9d11821";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
@@ -78,7 +83,7 @@ function getForecast(coordinates) {
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = `${temperature}°`;
+  temperatureElement.innerHTML = `${temperature}`;
   let description = response.data.weather[0].description;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = `${description}`;
@@ -99,24 +104,6 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-  function convertFarenheit(event) {
-    event.preventDefault();
-    let h4 = document.querySelector("h4");
-    h4.innerHTML = `${operationF}°`;
-  }
-
-  function convertCelsius(event) {
-    event.preventDefault();
-    let h4 = document.querySelector("h4");
-    h4.innerHTML = `${temperature}°`;
-  }
-  let operationF = Math.round(temperature * 1.8 + 32);
-  let fLink = document.querySelector("#farenheit-link");
-  fLink.addEventListener("click", convertFarenheit);
-  let cLink = document.querySelector("#celsius-link");
-  cLink.addEventListener("click", convertCelsius);
-
   getForecast(response.data.coord);
 }
 
@@ -153,5 +140,3 @@ function getretrievePosition() {
 
 let currentlocation = document.querySelector("#currentlocation");
 currentlocation.addEventListener("click", getretrievePosition);
-
-search("Mexico");
