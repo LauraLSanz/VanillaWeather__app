@@ -6,6 +6,8 @@
     rgba(170, 254, 235, 0.43) 90%
   );
   border-radius: 10px;
+  margin: 10px;
+  display: block;
 }
 
 .container {
@@ -17,11 +19,13 @@
   );
 
   display: block;
+  margin: 20px 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
 
   border-radius: 10px;
-  max-width: 600px;
+
+  padding: 20px;
 }
 
 body {
@@ -113,6 +117,15 @@ h4 {
   top: -112px;
   left: 83px;
 }
+#farenheit {
+  font-size: 28px;
+  color: rgb(56, 60, 65);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  top: -112px;
+  left: 83px;
+}
 
 #githubLink {
   display: block;
@@ -133,7 +146,7 @@ h4 {
   text-align: right;
   position: relative;
   top: 6px;
-  left: 427px;
+  left: 393px;
 }
 .form-control::placeholder {
   font-size: 13px;
@@ -151,7 +164,7 @@ h4 {
   position: relative;
   margin: 0;
   top: 36px;
-  left: 529px;
+  left: 504px;
 }
 
 #currentlocation {
@@ -164,6 +177,32 @@ h4 {
   text-align: center;
   position: relative;
   top: -15px;
-  left: 453px;
+  left: 423px;
   font-size: 12px;
+}
+
+@media (max-width: 960px) {
+  .form-control {
+    position: relative;
+    top: 6px;
+    left: 149px;
+  }
+
+  .🔍 {
+    position: relative;
+    margin: 0;
+    top: 36px;
+    left: 257px;
+  }
+
+  #currentlocation {
+    position: relative;
+    top: -15px;
+    left: 177px;
+    font-size: 12px;
+  }
+  .container {
+    margin: 0;
+    padding: 5px;
+  }
 }
