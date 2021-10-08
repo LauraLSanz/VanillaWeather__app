@@ -8,6 +8,7 @@
   border-radius: 10px;
   margin: 10px;
   display: block;
+  text-align: center;
 }
 
 .container {
@@ -18,7 +19,6 @@
     rgba(170, 254, 235, 0.43) 90%
   );
 
-  display: block;
   margin: 20px 20px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -144,13 +144,11 @@ h4 {
   font-family: "Poppins", sans-serif;
   max-width: 140px;
   text-align: right;
-  position: relative;
-  top: 6px;
-  left: 393px;
 }
 .form-control::placeholder {
-  font-size: 13px;
+  font-size: 12px;
   color: rgba(35, 35, 75, 0.76);
+  text-align: left;
 }
 
 .🔍 {
@@ -161,10 +159,8 @@ h4 {
   border-width: 0px;
   display: block;
   text-align: center;
-  position: relative;
+
   margin: 0;
-  top: 36px;
-  left: 504px;
 }
 
 #currentlocation {
@@ -175,9 +171,7 @@ h4 {
   border-width: 0px;
   display: block;
   text-align: center;
-  position: relative;
-  top: -15px;
-  left: 423px;
+
   font-size: 12px;
 }
 
